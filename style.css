@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.light {
+    background-color:#FFF;
+}
+
+
+
+.relogio {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow:0px 0px 15px 0px #FFF;
+}
+.relogio.light {
+    box-shadow:0px 0px 15px 0px #000;
+}
+
+.riscos {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -3px;
+}
+.risco {
+    width: 145px;
+    height: 5px;
+    position: absolute;
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+.risco .ponto {
+    width: 15px;
+    height: 100%;
+    background-color: #FFF;
+}
+.risco .ponto.light {
+    background-color:#000;
+}
+.risco .ponto--segundo {
+    width:5px;
+    height:2px;
+    background-color:#FFF;
+}
+.risco .ponto--segundo.light {
+    background-color:#000;
+}
+
+.ponteiros {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -100%;
+}
+.p {
+    transform-origin: left;
+    transform: rotate(0deg);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.p_s {
+    width: 100px;
+    height: 1px;
+    background-color: #F00;
+}
+.p_m {
+    width: 120px;
+    height: 3px;
+    background-color: #FFF;
+}
+.p_h {
+    width: 70px;
+    height: 5px;
+    background-color: #FFF;
+}
+.encaixe {
+    width: 5px;
+    height: 5px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -2px;
+}
+.p_m.light,
+.p_h.light,
+.encaixe.light {
+    background-color:#000;
+}
+.digital {
+    color: #FFF;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.digital.light {
+    color:#000;
+}
+
+.button--mode {
+    width:100px;
+    background-color:#000;
+    color:#949494;
+    padding:10px;
+    border-radius:30px;
+    margin-top:30px;
+    cursor:pointer;
+    box-shadow:0px 0px 5px 0px #FFF;
+    border:0;
+    transition:all linear 1s;
+}
+.button--mode:hover {
+    background-color:#242424;
+    font-weight:bold;
+}
+.button--mode.light {
+    background-color:#FFF;
+    box-shadow:0px 0px 5px 0px #000;
+}
+.button--mode.light:hover {
+    background-color:#e0e0e0;
+    font-weight:bold;
+    color:#000;
+}
+
+footer {
+    text-align:center;
+    color:#949494;
+    font-size:12px;
+    margin-top:50px;
+    transition:all linear 1s;
+}
+footer:hover {
+    border-bottom:1px solid #242424;
+}
+
+footer a {
+    color:#242424;
+    text-decoration:none;
+}
