@@ -23,7 +23,7 @@
     <h1>Pré Visualização</h1>
     <br/>
     <p align="center">
-    <img src="images/preview.jpeg" alt="previewdesktop"/>
+    <img src="images/preview.png" alt="previewdesktop"/>
     </p>
     <p align="center">
     <img src="images/mobile-view.png" alt="mobileview"/>
